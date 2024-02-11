@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBJORA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/itc-slider.css">
+  <link rel="stylesheet" href="css/animated-accordion.css">
+</head>
+
+<body>
+  <header>
+    <section class="header">
+      <div class="logo__container">
+        <button onclick="theme()" class="logo"><img src="img/Снимок экрана 2023-11-05 191932.png" alt=""></button>
+        <div class="theme">
+          <ul class="tt">
+            <li onclick="dark()" class="ttli"><img src="img/icons8-бургер-из-говядины-64 (1).png" alt=""></li>
+            <li onclick="light()" class="ttli"><img src="img/icons8-бургер-из-говядины-64.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="ul">
+          <li class="li"><a class="a" href="">Комбо</a></li>
+          <li class="li"><a class="a" href="">О нас</a></li>
+          <li class="li"><a class="a" href="">Меню</a></li>
+        </ul>
+      </nav>
+      <div class="burger" onclick="burger()">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="basket">
+      <div class="basket__container">
+        <a class="basketmenu" href=""><img class="busketimg" src="img/icons8-корзина-32.png" alt=""></a>
+        <p class="basketcash">0$</p>
+      </div>
+    </section>
+    <section class="video">
+      <video autoplay muted loop id="sukuna">
+        <source src="video/видео3.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <h1 class="g1video">HOKAGEBOMZ</h1>
+        <button onclick="mute()" class="vbutton">
+             MUTE
+        </button>
+        <button onclick="pause()" class="vbutton">
+             PAUSE/PLAY
+        </button>
+        <button onclick="prev()" class="vbutton">
+             BACK
+        </button>
+        <button onclick="next()" class="vbutton">
+             NEXT
+        </button>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <h1 class="product__title">Бургеры</h1>
+        <div class="itc-slider" data-slider="itc-slider">
+          <div class="itc-slider-wrapper">
+            <div class="itc-slider-items">
+              <div class="itc-slider-item">
+                <img class="product__img" src="img/p_O.jpg" alt="">
+              </div>
+              <div class="itc-slider-item">
+                <img class="product__img" src="img/Pitctca_-_natcionalnoe_italyanskoe_blyudo.jpg" alt="">
+              </div>
+              <div class="itc-slider-item">
+                <img class="product__img" src="img/3252735e7e388a42e097b8e7d0c3baf207940871_1181.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+          <button class="itc-slider-btn itc-slider-btn-prev"></button>
+          <button class="itc-slider-btn itc-slider-btn-next"></button>
+        </div>
+
+        <p class="product__description">Комбо из вкуснейшего чизбургера и картофеля фри.</p>
+        <button id="buy" onclick="buying()" class="product__button">В карзину</button>
+        <p class="product_price">300$</p>
+        <div class="accordion" id="accordion-1">
+          <div class="accordion__item ">
+            <div class="accordion__header">
+              Комбо
+            </div>
+            <div class="accordion__body">
+              Стандартный Комбо состоит из Гранда, картофеля / наггетсов на выбор и Напитка на выбор.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <h2>Наша точка</h2>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab469a735130f76236c7f892831d533d9263f2f20c7a9fb3df4b242436c0f8bcb&amp;source=constructor"
+          width="100%" height="400" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+  <div class="footer">
+    <img class="footer__img" src="img/Снимок экрана 2023-11-05 191932.png" alt="">
+    <ul class="footer__ul">
+      <li> Номер телефона: 8 999-444 34</li>
+      <li> Telegram: OBJORA.tg</li>
+      <li> VK: <a href="https://vk.com/video-102087446_456286502?list=57d500f113e219ea86&t=1m5s">OBJORA</a></li>
+    </ul>
+  </div>
+  </footer>
+  <script src="scripts/button.js"></script>
+  <script src="scripts/itc-slider.js"></script>
+  <script src="scripts/logomen.js"></script>
+  <script src="scripts/animated-accordion.js"></script>
+  <script src="scripts/theme.js"></script>
+  <script src="scripts/burger.js"></script>
+  <script src="scripts/video.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBJORA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/itc-slider.css">
+  <link rel="stylesheet" href="css/animated-accordion.css">
+</head>
+
+<body>
+  <header>
+    <section class="header">
+      <div class="logo__container">
+        <button onclick="theme()" class="logo"><img src="img/Снимок экрана 2023-11-05 191932.png" alt=""></button>
+        <div class="theme">
+          <ul class="tt">
+            <li onclick="dark()" class="ttli"><img src="img/icons8-бургер-из-говядины-64 (1).png" alt=""></li>
+            <li onclick="light()" class="ttli"><img src="img/icons8-бургер-из-говядины-64.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="ul">
+          <li class="li"><a class="a" href="">Комбо</a></li>
+          <li class="li"><a class="a" href="">О нас</a></li>
+          <li class="li"><a class="a" href="">Меню</a></li>
+        </ul>
+      </nav>
+      <div class="burger" onclick="burger()">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="gds">
+ <div class="container">
+    <ul class="gds__list">
+        <li class="gds__item"><p class="gds__text"><img src="img/images.jpeg" alt=""></p></li>
+    </ul>
+    <button onclick="spawning()">update</button>
+ </div>
+    </section>
+  </main>
+  <footer>
+  <div class="footer">
+    <img class="footer__img" src="img/Снимок экрана 2023-11-05 191932.png" alt="">
+    <ul class="footer__ul">
+      <li> Номер телефона: 8 999-444 34</li>
+      <li> Telegram: OBJORA.tg</li>
+      <li> VK: <a href="https://vk.com/video-102087446_456286502?list=57d500f113e219ea86&t=1m5s">OBJORA</a></li>
+    </ul>
+  </div>
+  </footer>
+  <script src="scripts/button.js"></script>
+  <script src="scripts/logomen.js"></script>
+  <script src="scripts/animated-accordion.js"></script>
+  <script src="scripts/theme.js"></script>
+  <script src="scripts/burger.js"></script>
+  <script src="scripts/basket.js"></script>
+
+</html>

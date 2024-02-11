@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geologica:wght@400;500;700&family=Montserrat:wght@500&display=swap');
+body{
+    font-family: 'Anton', sans-serif;
+    background: #ffdb58;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+   }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gds__list{
+    list-style: none;
+    border: 1px solid #8B0000;
+}
+.gds__item{
+    border: 1px solid #8B0000;
+}
+.gds__text{
+    font-size: 200px}
+.header {
+    background: #1d1d1d;
+}
+.logo__container{
+    display: flex;
+    align-items: center;
+}
+ .theme{
+    display: flex;
+    align-items: center;
+    list-style: none;
+ }
+.logo {
+    display: block;
+    margin-left: 200px; 
+    border: none;
+    outline: none;
+}
+.tt{
+    display: flex;
+    align-items: center;
+    transform: translateX(-90%); scale:(0.3);
+    position: relative;
+    z-index: -1;
+    transition: all 1s ease;
+    list-style: none;
+margin-left: 50px;}
+.tt2{
+    transform: translateX(0); scale:(1) ;
+    z-index: 1;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    margin-left: 250px;
+}
+
+.li {
+    margin-right: 63px;
+    font-size: 2rem ;
+}
+.a{
+    color: aliceblue;
+}
+
+
+
+.product__title {
+    font-size: 90px;
+}
+
+.product__description {
+    font-size: 60px;
+}
+
+.product__button {
+    width: 200px;
+    height: 100px;
+    border-radius: 110px;
+    background: #e7bf2b;
+    font-size: 30px
+}
+
+.product__img {
+    height: 350px;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    
+}
+.ttli{margin-right: 20px;}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer{
+    background: #1d1d1d ;
+}
+.footer__img{
+    height: 10%;
+    width: 10%;
+}
+.burger__line{
+    width: 50px ;
+    height: 10px;
+    background: #000;
+    margin: 5px ;
+}
+.burger{
+display: none;
+}
+.video{
+    position: relative;
+}
+.content{
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    width: 100%;
+    z-index: 2;
+}
+.g1video{
+    color: aliceblue;
+}
+.vbutton{
+    background-color: #8B0000;
+    font-size: 24px;
+    padding: 32px 16px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+}
+#sukuna{
+    width: 100%;
+    
+}
+.basket__container{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.basketcash{
+    order: -1;
+}
+.hide-f1{
+    display: none;
+}
+
+
+@media screen and (max-width: 960px){
+   body{
+    overflow-x: hidden;
+   }
+    .ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute ;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: #1d1d1d;
+        width: 20%;
+        z-index: 3;
+        transform: translateX(100%);
+        transition: all 1s ease;
+    }
+    .li{
+        margin: auto 0;
+    }
+    .burger{
+        display: block;
+        z-index: 4;
+        position: absolute ;
+        right: 0;
+    }
+    .product__description{
+        font-size: 180%;
+    }
+    .product__title{
+        font-size: 280%;
+    }
+    .hide{
+        transform: translateX(0%);
+    }
+}
